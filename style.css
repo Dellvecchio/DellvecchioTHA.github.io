@@ -83,6 +83,12 @@ body {
     padding: 0;
 }
 
+/* Footer */
+
+footer{
+    color: #18f1df;
+}
+
 /* Animação da página */
 
 /* Monitor Antigo */
@@ -338,7 +344,7 @@ p:last-child:after {
     }
 
     #menu {
-        margin-left: 12.5%;
+        margin-inline: 9.5%;
         margin-top: 0%;
         background-color: rgba(0, 0, 0, 0.13);
         padding-inline: 4px;
@@ -382,7 +388,7 @@ p:last-child:after {
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
-    .body {
+     .body {
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -399,13 +405,16 @@ p:last-child:after {
 
 
     .link-div, .link-div a, .link-div img {
-        display: inline-table;
         padding: 4px;
-        margin-top: -7%;
-        margin-bottom: 8%;
-
+        margin-top: 10%;
+        margin-block-start: -3%;
     }
 
+    footer{
+        margin-top: 10%;
+        margin-block-start: -7.5%;
+        margin-left: 70%;
+    }
 }
 
 /* Resoluções de tela
