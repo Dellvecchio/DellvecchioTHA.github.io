@@ -1,0 +1,449 @@
+body {
+    background-image: url(./Coisas/layer/Lay.png), url(./Coisas/layer/THACAPA.png);
+    background-repeat: repeat-x, no-repeat;
+    background-attachment: scroll, fixed;
+    background-size: auto, cover;
+    background-color: rgb(26, 26, 26);
+    background-position: none, center;
+    color: aqua;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    height: auto;
+    width: 190px;
+}
+
+/* Estilo para o menu de navegação */
+#menu {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    position: absolute;
+    top: 120px;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu ul li a {
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Estilo para os itens do menu */
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    margin: 5px 0;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu ul li a:hover {
+    color: white;
+}
+
+/* Classe para esconder o menu */
+.hidden {
+    display: none;
+    padding: 0;
+}
+
+/* Animação da página */
+
+/* Monitor Antigo */
+.monitor-antigo {
+    background-color: #00000013;
+    border: 5px solid #7ffcdc4b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background-image:linear-gradient(transparent, transparent 3px, #222);
+    background-size:4px 4px;
+}
+
+/* Animação de varredura (Toda TELA) */
+.monitor-antigo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Altura igual à altura da tela */
+    background-image: linear-gradient(transparent 95%, rgba(0, 204, 187, 0.1) 96%, rgba(0, 204, 187, 0.1) 98%, transparent 99%);
+    background-size: 100% 4px; /* Espaçamento de 4px "linhas" */
+    pointer-events: none;
+    animation: scan 5s linear infinite; /* Animação de varredura */
+}
+
+/* Efeito de pulso */
+.monitor-antigo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 204, 187, 0.2);
+    animation: pulse 2s ease-in-out infinite;
+    pointer-events: none;
+}
+
+/* Efeito de chiado */
+.monitor-antigo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 204, 187, 0.1));
+    animation: noise 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+p:last-child:after {
+    animation:blink 1s infinite;
+    content:"_";
+  }
+
+@keyframes scan {
+    0% {
+        background-position: 0 -100%;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes noise {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    70% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes blink {
+    50% {
+      opacity:0;
+    }
+  }
+
+/* Links e Fontes, Imagens e conteúdos em geral */
+
+  .imge {
+    border: 3px;
+    border-radius: 5px;
+    color: darkcyan;
+  }
+  
+  a {
+      font-family:'Fira Mono', monospace;
+      color: aqua solid;
+      text-decoration: none;
+  }
+  
+  a:visited {
+      color: aqua;
+  }
+  
+  a:hover {
+      color: darkcyan;
+  }
+  
+  a:active {
+      color: navy;
+  }
+  
+  /* banner animado */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* toda a altura do main */
+    background-color: #f5f5f5; /* Cor de fundo pastel */
+    background-image: url(./Coisas/layer/bannerTha.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #dcdcdc; /* Borda sutil */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Banner */
+.banner-content {
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-family: 'Fira Mono', monospace; /* Fonte */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-fill-color: #18f1df;
+    font-size: 36px;
+    color: rgb(20, 20, 20); 
+}
+
+.banner-content p {
+    font-family: 'Fira Mono', monospace; /* Fonte suave */
+    font-size: 20px;
+    color: #76ffed; 
+    -webkit-text-stroke: 1px #000;
+}
+
+.banner-content a {
+    display: inline-block;
+    background-color: #48f1cd; /* Cor de botão chamativa */
+    color: #fff; /* Texto do botão */
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Espaçamento superior */
+    transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.banner-content a:hover {
+    background-color: #1b898d; /* Cor do botão mais escura ao passar o mouse */
+}
+
+/* Estilize a div */
+.link-div {
+    display: inline-block; /* Faz com que a div se ajuste ao tamanho do conteúdo */
+    margin: 10px; /* Margem para separar as divs */
+    text-align: center; /* Centraliza o conteúdo na div */
+  }
+  
+  /* Para links da página */
+  .link-div a {
+    display: block; /* Faz com que o link ocupe toda a largura da div */
+    text-decoration: none;
+    border: 1px solid #ddd; 
+    padding: 10px; /* Espaçamento interno para separar o texto da borda */
+    border-radius: 5px; 
+    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
+  }
+  
+  .link-div a:hover {
+    background-color: #f0f0f0; /* Cor de fundo quando o mouse está sobre o link */
+  }
+  
+  /* Estilize as imagens */
+  .link-div img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  /* Exemplo de estilização para um link específico */
+  .link-div#link1 a {
+    background-color: #3498db; /* Cor de fundo personalizada para o primeiro link */
+    color: #fff; /* Cor do texto personalizada para o primeiro link */
+  }
+  
+/* Chiado */
+.tv-chiado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 90%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0.8) 100%);
+    animation: chiado 1s steps(1) infinite;
+    pointer-events: none;
+}
+
+@keyframes chiado {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .body {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .monitor-antigo, .monitor-antigo::after, .monitor-antigo::before {
+        width: 100%; 
+        background-attachment: scroll; 
+        border: none; 
+        position: absolute;
+    }
+
+    #menu {
+        margin-left: 12.5%;
+        margin-top: 0%;
+        background-color: rgba(0, 0, 0, 0.13);
+        padding-inline: 4px;
+    }
+
+    #menu ul li a {
+        color: #000;
+    }
+
+    #banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link-div, .link-div a, .link-div img {
+        display: inline-table;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .monitor-antigo{
+        width: auto;
+        background-attachment: scroll; 
+        border: none; 
+        position: absolute;
+    }
+
+    #banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link-div, .link-div a, .link-div img {
+        display: inline-table;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .body {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .monitor-antigo, .monitor-antigo::after, .monitor-antigo::before {
+        width: 100%; 
+        background-attachment: scroll; 
+        border: none; 
+        position: absolute;
+    }
+
+
+    .link-div, .link-div a, .link-div img {
+        display: inline-table;
+        padding: 4px;
+        margin-top: -7%;
+        margin-bottom: 8%;
+
+    }
+
+}
+
+/* Resoluções de tela
+
+    @media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+}
+
+*/
