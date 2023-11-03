@@ -224,16 +224,16 @@ p:last-child:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* toda a altura do main */
-    background-color: #f5f5f5; /* Cor de fundo pastel */
+    height: 100%; 
+    background-color: #f5f5f5; 
     background-image: url(./Coisas/layer/bannerTha.gif);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 2px solid #dcdcdc; /* Borda sutil */
-    padding: 20px; /* Espaçamento interno */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border: 2px solid #dcdcdc; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 /* Banner */
@@ -242,7 +242,7 @@ p:last-child:after {
 }
 
 .banner-content h2 {
-    font-family: 'Fira Mono', monospace; /* Fonte */
+    font-family: 'Fira Mono', monospace; 
     -webkit-text-stroke-width: 3px;
     -webkit-text-fill-color: #18f1df;
     font-size: 36px;
@@ -264,45 +264,44 @@ p:last-child:after {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px; /* Espaçamento superior */
-    transition: background-color 0.3s ease; /* Transição de cor suave */
+    margin-top: 20px; 
+    transition: background-color 0.3s ease; 
 }
 
 .banner-content a:hover {
-    background-color: #1b898d; /* Cor do botão mais escura ao passar o mouse */
+    background-color: #1b898d; 
 }
 
-/* Estilize a div */
+/*link div */
 .link-div {
     display: inline-block; /* Faz com que a div se ajuste ao tamanho do conteúdo */
-    margin: 10px; /* Margem para separar as divs */
-    text-align: center; /* Centraliza o conteúdo na div */
+    margin: 10px; 
+    text-align: center; 
   }
   
   /* Para links da página */
   .link-div a {
-    display: block; /* Faz com que o link ocupe toda a largura da div */
+    display: block; 
     text-decoration: none;
     border: 1px solid #ddd; 
-    padding: 10px; /* Espaçamento interno para separar o texto da borda */
+    padding: 10px; 
     border-radius: 5px; 
     transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
   }
   
   .link-div a:hover {
-    background-color: #f0f0f0; /* Cor de fundo quando o mouse está sobre o link */
+    background-color: #f0f0f0; 
   }
   
-  /* Estilize as imagens */
+  /* imagens */
   .link-div img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; 
+    height: auto; 
   }
   
-  /* Exemplo de estilização para um link específico */
   .link-div#link1 a {
-    background-color: #3498db; /* Cor de fundo personalizada para o primeiro link */
-    color: #fff; /* Cor do texto personalizada para o primeiro link */
+    background-color: #3498db; 
+    color: #fff; 
   }
   
 /* Chiado */
