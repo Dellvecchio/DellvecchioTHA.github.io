@@ -60,20 +60,20 @@ body {
 
 #buttom {
     background-color: #fddfdf; /* Cor de fundo */
-    text-align: center; /* Centralizar o botão */
-    padding: 10px; /* Espaçamento interno */
+    text-align: center; 
+    padding: 10px; 
 }
 
 #buttom button {
     background-color: #ff6b6b; /* Cor de fundo do botão */
-    color: white; /* Cor do texto no botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: none; /* Remover a borda */
-    cursor: pointer; /* Mudar o cursor */
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
 }
 
 #buttom button:hover {
-    background-color: #e55050; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #e55050;
 }
 
 /* conteúdo da página */
@@ -136,25 +136,25 @@ body {
 
 @media only screen and (max-width: 600px) {
     .coluna-esquerda, .coluna-direita {
-        width: 100%; /* Faça as colunas ocuparem toda a largura da tela */
-        background-attachment: scroll; /* Remova o attachment fixed para a imagem de fundo */
-        border: none; /* Remova a borda para economizar espaço */
+        width: 100%; 
+        background-attachment: scroll; 
+        border: none; 
     }
 
     .coluna-direita {
-        background-size: auto; /* Deixe a imagem de fundo manter seu tamanho original */
+        background-size: auto; 
     }
 }
 
 @media only screen and (min-width:601px) and (max-width: 720px) {
     .coluna-esquerda, .coluna-direita {
-        width: 100%; /* Faça as colunas ocuparem toda a largura da tela */
-        background-attachment: scroll; /* Remova o attachment fixed para a imagem de fundo */
-        border: none; /* Remova a borda para economizar espaço */
+        width: 100%; 
+        background-attachment: scroll; 
+        border: none; 
     }
 
     .coluna-direita {
-        background-size: auto; /* tamanho original */
+        background-size: auto; 
     }
 }
 
