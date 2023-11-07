@@ -14,6 +14,7 @@ My website(Study)
 .Ajuste do site para mais responsivo, ajustes das divs e links/Página Protótipo Lucylima, ajustes de DIV, correções de CSS
 .Novo Ajuste do site responsivo, adicionando o formato Landscape/Adicionado o modo responsivo para o site Protótipo/Correções de CSS
 .Resolvido o Bug de plano de fundo(Versão Mobile)/Novos estilos para Links do conteúdo/Melhorias do modo responsivo
+.Atualização do JavaScript, adicionando uma caixa interativa em "Personagens" Sendo clicável e mostrando o conteúdo
 
 #Futuros Updates
 .Banner(Completado)
