@@ -13,3 +13,13 @@ document.addEventListener('click', (event) => {
         menu.classList.add('hidden');
     }
 });
+
+//Caixa Interativa dos personagens(OFF)
+function toggleLinks() {
+    var linksNav = document.queryselector(".links");
+    if (linksNav.classList.contains("hidden")) {
+        linksNav.classList.remove("hidden");
+    } else {
+        linksNav.classList.add("hidden");
+    }
+}
