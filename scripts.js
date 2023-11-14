@@ -14,7 +14,7 @@ document.addEventListener('click', (event) => {
     }
 });
 
-//Caixa Interativa dos personagens(OFF)
+//Caixa Interativa dos personagens
 function toggleLinks() {
     var linksNav = document.queryselector(".links");
     if (linksNav.classList.contains("hidden")) {
