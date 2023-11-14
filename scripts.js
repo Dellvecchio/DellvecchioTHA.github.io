@@ -16,10 +16,11 @@ document.addEventListener('click', (event) => {
 
 //Caixa Interativa dos personagens
 function toggleLinks() {
-    var linksNav = document.queryselector(".links");
+    var linksNav = document.querySelector(".links");
+
     if (linksNav.classList.contains("hidden")) {
-        linksNav.classList.remove("hidden");
+        linksNav.classList.remove("hidden"); 
     } else {
-        linksNav.classList.add("hidden");
+        linksNav.classList.add("hidden"); 
     }
 }
