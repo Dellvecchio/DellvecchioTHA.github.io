@@ -126,9 +126,9 @@ footer{
     width: 100%;
     height: 100vh; /* Altura igual à altura da tela */
     background-image: linear-gradient(transparent 95%, rgba(0, 204, 187, 0.1) 96%, rgba(0, 204, 187, 0.1) 98%, transparent 99%);
-    background-size: 100% 4px; /* Espaçamento de 4px "linhas" */
+    background-size: 100% 4px; /* Espaçamento de 4px */
     pointer-events: none;
-    animation: scan 5s linear infinite; /* Animação de varredura */
+    animation: scan 5s linear infinite; /* varredura */
 }
 
 /* Efeito de pulso */
@@ -237,7 +237,7 @@ p:last-child:after {
     justify-content: center;
     align-items: center;
     height: 100%; 
-    background-color: #f5f5f5; 
+    background-color: #f5f5f5;
     background-image: url(./Coisas/layer/bannerTha.gif);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -245,10 +245,24 @@ p:last-child:after {
     background-position: center;
     border: 2px solid #dcdcdc; 
     padding: 20px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Banner */
+
+/*.video {
+    width: 100%; 
+    height: auto; 
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    size: cover;
+    padding: 8px;
+    border: 2px solid #dcdcdc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+} off*/
+
 .banner-content {
     text-align: center;
 }
@@ -262,7 +276,7 @@ p:last-child:after {
 }
 
 .banner-content p {
-    font-family: 'Fira Mono', monospace; /* Fonte suave */
+    font-family: 'Fira Mono', monospace; 
     font-size: 20px;
     color: #76ffed; 
     -webkit-text-stroke: 1px #000;
@@ -270,23 +284,23 @@ p:last-child:after {
 
 .banner-content a {
     display: inline-block;
-    background-color: #48f1cd; /* Cor de botão chamativa */
-    color: #fff; /* Texto do botão */
+    background-color: #48f1cd; 
+    color: #fff; 
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px; 
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .banner-content a:hover {
     background-color: #1b898d; 
 }
 
-/*link div */
+/* Estilização da div */
 .link-div {
-    display: inline-block; /* Faz com que a div se ajuste ao tamanho do conteúdo */
+    display: inline-block; 
     margin: 10px; 
     text-align: center; 
   }
@@ -298,19 +312,20 @@ p:last-child:after {
     border: 1px solid #ddd; 
     padding: 10px; 
     border-radius: 5px; 
-    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
+    transition: background-color 0.3s; 
   }
   
   .link-div a:hover {
     background-color: #f0f0f0; 
   }
   
-  /* imagens */
+  /* Estilize as imagens */
   .link-div img {
     max-width: 100%; 
     height: auto; 
   }
   
+  /* Exemplo de estilização para um link específico */
   .link-div#link1 a {
     background-color: #3498db; 
     color: #fff; 
@@ -337,9 +352,7 @@ p:last-child:after {
     }
 }
 
-/* Responsivo */
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
     .body {
         background-position: center;
@@ -401,7 +414,7 @@ p:last-child:after {
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
-     .body {
+    .body {
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -428,4 +441,5 @@ p:last-child:after {
         margin-block-start: -7.5%;
         margin-left: 70%;
     }
+
 }
