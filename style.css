@@ -89,6 +89,13 @@ footer{
     color: #18f1df;
 }
 
+/* Mudança de cor em "Personagens" */
+
+#personagens-toggle:hover {
+    color: rgb(224, 239, 243); 
+    cursor: pointer; 
+}
+
 /* Animação da página */
 
 /* Monitor Antigo */
