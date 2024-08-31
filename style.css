@@ -27,7 +27,7 @@ body {
     width: 190px;
 }
 
-* Container das imagens */
+/* Container das imagens */
 .image-grid {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +38,7 @@ body {
 }
 
 .image-grid li {
-    flex: 0 0 calc(33.33% - 10px);
+    flex: 0 0 calc(33.33% - 10px); 
     margin-bottom: 15px;
 }
 
@@ -95,7 +95,6 @@ body {
 #menu ul li a:hover {
     color: white;
 }
-
 /* Classe para esconder o menu */
 .hidden {
     display: none;
@@ -106,6 +105,45 @@ body {
 
 footer{
     color: #18f1df;
+}
+
+/* Animação de carregamento */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    z-index: 9999;
+}
+
+.loading .percent {
+    font-size: 24px;
+}
+
+.loading .text {
+    margin-top: 10px;
+}
+
+.loading .progress-bar {
+    width: 200px;
+    height: 20px;
+    background: #555;
+    margin-top: 20px;
+    position: relative;
+}
+
+.loading .progress {
+    height: 100%;
+    width: 0;
+    background: #4CAF50;
+    position: absolute;
 }
 
 /* Mudança de cor em "Personagens" */
@@ -145,9 +183,9 @@ footer{
     width: 100%;
     height: 100vh; /* Altura igual à altura da tela */
     background-image: linear-gradient(transparent 95%, rgba(0, 204, 187, 0.1) 96%, rgba(0, 204, 187, 0.1) 98%, transparent 99%);
-    background-size: 100% 4px; /* Espaçamento de 4px */
+    background-size: 100% 4px; /* Espaçamento de 4px "linhas" */
     pointer-events: none;
-    animation: scan 5s linear infinite; /* varredura */
+    animation: scan 5s linear infinite; /* Animação de varredura */
 }
 
 /* Efeito de pulso */
@@ -255,7 +293,7 @@ p:last-child:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; 
+    height: 100%; /* toda a altura do main */
     background-color: #f5f5f5;
     background-image: url(./Coisas/layer/bannerTha-min\ otimizado.gif);
     background-attachment: fixed;
@@ -280,14 +318,14 @@ p:last-child:after {
     padding: 8px;
     border: 2px solid #dcdcdc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-} off*/
+}*/
 
 .banner-content {
     text-align: center;
 }
 
 .banner-content h2 {
-    font-family: 'Fira Mono', monospace; 
+    font-family: 'Fira Mono', monospace; /* Fonte */
     -webkit-text-stroke-width: 3px;
     -webkit-text-fill-color: #18f1df;
     font-size: 36px;
@@ -295,7 +333,7 @@ p:last-child:after {
 }
 
 .banner-content p {
-    font-family: 'Fira Mono', monospace; 
+    font-family: 'Fira Mono', monospace; /* Fonte suave */
     font-size: 20px;
     color: #76ffed; 
     -webkit-text-stroke: 1px #000;
@@ -303,51 +341,51 @@ p:last-child:after {
 
 .banner-content a {
     display: inline-block;
-    background-color: #48f1cd; 
-    color: #fff; 
+    background-color: #48f1cd; /* Cor de botão chamativa */
+    color: #fff; /* Texto do botão */
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px; 
-    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espaçamento superior */
+    transition: background-color 0.3s ease; /* Transição de cor suave */
 }
 
 .banner-content a:hover {
-    background-color: #1b898d; 
+    background-color: #1b898d; /* Cor do botão mais escura ao passar o mouse */
 }
 
-/* Estilização da div */
+/* Estilize a div */
 .link-div {
-    display: inline-block; 
-    margin: 10px; 
-    text-align: center; 
+    display: inline-block; /* Faz com que a div se ajuste ao tamanho do conteúdo */
+    margin: 10px; /* Margem para separar as divs */
+    text-align: center; /* Centraliza o conteúdo na div */
   }
   
   /* Para links da página */
   .link-div a {
-    display: block; 
+    display: block; /* Faz com que o link ocupe toda a largura da div */
     text-decoration: none;
     border: 1px solid #ddd; 
-    padding: 10px; 
+    padding: 10px; /* Espaçamento interno para separar o texto da borda */
     border-radius: 5px; 
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
   }
   
   .link-div a:hover {
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0; /* Cor de fundo quando o mouse está sobre o link */
   }
   
   /* Estilize as imagens */
   .link-div img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
   }
   
   /* Exemplo de estilização para um link específico */
   .link-div#link1 a {
-    background-color: #3498db; 
-    color: #fff; 
+    background-color: #3498db; /* Cor de fundo personalizada para o primeiro link */
+    color: #fff; /* Cor do texto personalizada para o primeiro link */
   }
   
 /* Chiado */
@@ -462,3 +500,43 @@ p:last-child:after {
     }
 
 }
+
+/* Resoluções de tela
+
+    @media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+}
+
+*/
