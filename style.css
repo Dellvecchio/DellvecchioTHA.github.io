@@ -27,6 +27,26 @@ body {
     width: 190px;
 }
 
+* Container das imagens */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.image-grid li {
+    flex: 0 0 calc(33.33% - 10px); 
+    margin-bottom: 15px;
+}
+
+.image-grid li img {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Estilo para o menu de navegação */
 #menu {
     background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
@@ -56,7 +76,6 @@ body {
 #menu ul li a:hover {
     color: rgb(255, 255, 255);
 }
-
 
 /* Estilo para os itens do menu */
 #menu ul {
